@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forms - Papa Ferd's Printing Shop</title>
+    </head>
+    <body style="background-image: idk.png;">
+        <!--menu-->
+        <div id="shared-placeholder"></div>
+        <script src="shared.js" defer></script>
+        <!-- -->    
+        <div class="form">
+            <form action="database.php" method="post">
+                <div class="t-inputarea">
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div style="margin-bottom: 3%;"></div>
+                <div class="t-inputarea">
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div style="margin-bottom: 3%;"></div>
+                <div class="inputarea">
+                    <label for="product">Product:</label><br>
+                    <select id="product" name="product" required>
+                        <option value="">Choose a product</option>
+                        <option value="sticker">Sticker</option>
+                        <option value="poster">Poster</option>
+                        <option value="flyer">Flyer</option>
+                    </select>
+                </div>
+                <div style="margin-bottom: 3%;"></div>
+                <div class="inputarea">
+                    <label for="quantity">Quantity:</label><br>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                <div style="margin-bottom: 3%;"></div>
+                <div class="t-inputarea">
+                    <label style="transform: translateY(-100%)" for="address">Address</label><br>
+                    <textarea id="address" name="address" rows="2" cols="30" required></textarea>
+                </div><br>
+                <button type="submit">Order</button>
+            </form>
+        </div>
+        <!--footer-->
+        <div id="footer-placeholder"></div>
+        <!-- -->
+    </body>
+</html>
