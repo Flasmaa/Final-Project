@@ -22,12 +22,12 @@
                 <h2>For Product:</h2>
                 <div class="inputarea" style="margin-left: 4.5%;">
                     <label for="product">File:</label><br>
-                    <input type="file" id="doc" name="doc" required>
+                    <input type="file" id="doc" name="doc">
                 </div>
                 <div style="margin-bottom: 3%;"></div>
                 <div class="inputarea">
                     <label for="product">Product:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a finished/raw product</option>
                         <option value="Photo TIles">Photo Tile</option>
                         <option value="Photo Frames">Photo Frame</option>
@@ -55,7 +55,7 @@
                 </div>
                 <div class="inputarea">
                     <label for="product">Print Type:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a type</option>
                         <option value="Photo TIles">Black & White | Base Price</option>
                         <option value="Photo Frames">Colored | x2.2</option>
@@ -63,7 +63,7 @@
                 </div>
                 <div class="inputarea">
                     <label for="product">Paper Type:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a type</option>
                         <option value="Photo TIles">Glossy | +₱10</option>
                         <option value="Photo Frames">Matte | +₱20</option>
@@ -72,7 +72,7 @@
                 </div>
                 <div class="inputarea">
                     <label for="product">Weight:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a weight</option>
                         <option value="Photo TIles">Base | Base Price</option>
                         <option value="Photo Frames">Office (80-100gsm) | +₱10</option>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="inputarea">
                     <label for="product">Size:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a size</option>
                         <option value="Photo TIles">Base | Base Price</option>
                         <option value="Photo Frames">A4 (210x297mm) | x1.2</option>
@@ -93,12 +93,12 @@
                 </div>
                 <div class="inputarea">
                     <label for="quantity">Quantity:</label><br>
-                    <input type="number" id="quantity" name="quantity" min="1" max="999" value="1" required>
+                    <input type="number" id="quantity" name="quantity" min="0" max="999" value="0">
                 </div>
                 <h2>For Raw Material:</h2>
                 <div class="inputarea">
                     <label for="product">Paper:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a type</option>
                         <option value="Photo TIles">Glossy | +₱10</option>
                         <option value="Photo Frames">Matte | +₱20</option>
@@ -107,16 +107,16 @@
                 </div>
                 <div class="inputarea">
                     <label for="product">Weight:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a weight</option>
                         <option value="Photo TIles">Base | Base Price</option>
-                        <option value="Photo Frames">Office (80-100gsm | +₱10</option>
+                        <option value="Photo Frames">Office (80-100gsm) | +₱10</option>
                         <option value="Photo Posters">Cards (200gsm) | +₱20</option>
                     </select>
                 </div>
                 <div class="inputarea">
                     <label for="product">Size:</label><br>
-                    <select id="product" name="product" required>
+                    <select id="product" name="product">
                         <option value="">Choose a size</option>
                         <option value="Photo TIles">Base | Base Price</option>
                         <option value="Photo Frames">A4 (210x297mm) | x1.2</option>
@@ -129,12 +129,16 @@
                 <div style="margin-bottom: 3%;"></div>
                 <div class="inputarea">
                     <label for="quantity">Quantity:</label><br>
-                    <input type="number" id="quantity" name="quantity" min="1" max="999" value="1" required>
+                    <input type="number" id="quantity" name="quantity" min="0" max="999" value="0">
                 </div>
                 <div style="margin-bottom: 3%;"></div>
                 <div class="t-inputarea">
                     <label style="transform: translateY(-100%)" for="address">Address</label><br>
                     <textarea id="address" name="address" rows="2" cols="30" required></textarea>
+                </div><br>
+                <div class="t-inputarea">
+                    <label style="transform: translateY(-100%)" for="address">Notes</label><br>
+                    <textarea id="note" name="note" rows="2" cols="30"></textarea>
                 </div><br>
                 <!--sir di ko na alam ung java ng total haha tsaka php ng database-->
                 <button type="submit">Order</button>
