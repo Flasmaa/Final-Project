@@ -3,14 +3,14 @@ const menuHtml = `
   <h1 class="hoverfloat">Papa Ferd's Printing Shop</h1>
     <dl>
         <div class="sec">
-            <dt><a href="index.html" class="default" style="color: black; text-decoration: none;">Homepage</a></dt>
-        </div><br><br>
+            <dt><a href="index.html" class="default" style="color: black; text-decoration: none;"><img src="img/home.png" style="position: relative; width: 40px; height: 40px; margin-right: 2px; transform: translateY(10px)"></img>Homepage</a></dt>
+        </div><br>
         <div class="sec">
-            <dt><a href="product.html" class="default" style="color: black; text-decoration: none;">Our Products</a></dt>
-        </div><br><br>
+            <dt><a href="product.html" class="default" style="color: black; text-decoration: none;"><img src="img/prod.png" style="position: relative; width: 40px; height: 40px; margin-right: 2px; transform: translateY(10px)"></img>Our Products</a></dt>
+        </div><br>
         <div class="sec">
             <dt><a href="preorder.html" class="default" style="color: black; text-decoration: none;" alt="Pre Order Now!"><img src="img/mail.png" style="position: relative; width: 40px; height: 40px; margin-right: 2px; transform: translateY(12.5px)"></img>Pre-Order</a></dt>
-        </div><br><br>
+        </div><br>
         <div class="sec">
             <dt><img src="img/loc.png" style="position: relative; width: 40px; height: 40px; margin-right: 2px; transform: translateY(10px)"></img>Branches (TBA)</dt>
         </div>
