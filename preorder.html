@@ -6,6 +6,8 @@
     <body style="background-image: url(img/bg1.jpg); background-size: cover;">
         <div id="shared-placeholder"></div>
         <script src="shared.js" defer></script>
+        <div id="list-placeholder"></div>
+        <div style="margin-bottom:3%;"></div>
         <div class="form">
             <form action="database.php" method="post">
                 <div class="t-inputarea">
@@ -17,6 +19,7 @@
                     <label for="email">Email</label><br>
                     <input type="email" id="email" name="email" required>
                 </div><br>
+                <h2>For Product:</h2>
                 <div class="inputarea" style="margin-left: 4.5%;">
                     <label for="product">File:</label><br>
                     <input type="file" id="doc" name="doc" required>
@@ -72,8 +75,8 @@
                     <select id="product" name="product" required>
                         <option value="">Choose a weight</option>
                         <option value="Photo TIles">Base | Base Price</option>
-                        <option value="Photo Frames">Office (80-100gsm)</option>
-                        <option value="Photo Posters">Cards (200gsm)</option>
+                        <option value="Photo Frames">Office (80-100gsm) | +₱10</option>
+                        <option value="Photo Posters">Cards (200gsm) | +₱20</option>
                     </select>
                 </div>
                 <div class="inputarea">
@@ -81,24 +84,59 @@
                     <select id="product" name="product" required>
                         <option value="">Choose a size</option>
                         <option value="Photo TIles">Base | Base Price</option>
-                        <option value="Photo Frames">A4 (210x297mm)</option>
-                        <option value="Photo Posters">A3 (297x420mm)</option>
-                        <option value="Photo Posters">Long Bond (8.5x13")</option>
-                        <option value="Photo Posters">Short Bond (8.5x11")</option>
-                        <option value="Photo Posters">Tabloid (11x17")</option>
+                        <option value="Photo Frames">A4 (210x297mm) | x1.2</option>
+                        <option value="Photo Posters">A3 (297x420mm) | x2</option>
+                        <option value="Photo Posters">Long Bond (8.5x13") | x1.1</option>
+                        <option value="Photo Posters">Short Bond (8.5x11") | x1.1</option>
+                        <option value="Photo Posters">Tabloid (11x17") | x1.8</option>
+                    </select>
+                </div>
+                <div class="inputarea">
+                    <label for="quantity">Quantity:</label><br>
+                    <input type="number" id="quantity" name="quantity" min="1" max="999" value="1" required>
+                </div>
+                <h2>For Raw Material:</h2>
+                <div class="inputarea">
+                    <label for="product">Paper:</label><br>
+                    <select id="product" name="product" required>
+                        <option value="">Choose a type</option>
+                        <option value="Photo TIles">Glossy | +₱10</option>
+                        <option value="Photo Frames">Matte | +₱20</option>
+                        <option value="Photo Posters">Silk Coated (Satin) | +₱30</option>
+                    </select>
+                </div>
+                <div class="inputarea">
+                    <label for="product">Weight:</label><br>
+                    <select id="product" name="product" required>
+                        <option value="">Choose a weight</option>
+                        <option value="Photo TIles">Base | Base Price</option>
+                        <option value="Photo Frames">Office (80-100gsm | +₱10</option>
+                        <option value="Photo Posters">Cards (200gsm) | +₱20</option>
+                    </select>
+                </div>
+                <div class="inputarea">
+                    <label for="product">Size:</label><br>
+                    <select id="product" name="product" required>
+                        <option value="">Choose a size</option>
+                        <option value="Photo TIles">Base | Base Price</option>
+                        <option value="Photo Frames">A4 (210x297mm) | x1.2</option>
+                        <option value="Photo Posters">A3 (297x420mm) | x2</option>
+                        <option value="Photo Posters">Long Bond (8.5x13") | x1.1</option>
+                        <option value="Photo Posters">Short Bond (8.5x11") | x1.1</option>
+                        <option value="Photo Posters">Tabloid (11x17") | x1.8</option>
                     </select>
                 </div>
                 <div style="margin-bottom: 3%;"></div>
                 <div class="inputarea">
                     <label for="quantity">Quantity:</label><br>
-                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                    <input type="number" id="quantity" name="quantity" min="1" max="999" value="1" required>
                 </div>
                 <div style="margin-bottom: 3%;"></div>
                 <div class="t-inputarea">
                     <label style="transform: translateY(-100%)" for="address">Address</label><br>
                     <textarea id="address" name="address" rows="2" cols="30" required></textarea>
                 </div><br>
-                <!--sir di ko na alam ung java ng total haha-->
+                <!--sir di ko na alam ung java ng total haha tsaka php ng database-->
                 <button type="submit">Order</button>
             </form>
         </div>

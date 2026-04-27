@@ -17,3 +17,4 @@ const load = (src) => {
 load('shared/menu.js');
 load('shared/header.js');
 load('shared/footer.js');
+load('shared/list.js');
