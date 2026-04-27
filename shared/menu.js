@@ -1,5 +1,6 @@
 const menuHtml = `
-  <div style="display: block; position: fixed; width: 12%; height: 100%; background-color: aliceblue;">
+  <div style="display: block; position: fixed; width: 12%; height: 100%; background-color: aliceblue; transform: translateY(-2.5%); border: 2px solid; border-color: black; padding: 0; overflow: hidden;">
+  <h1 class="hoverfloat">Papa Ferd's Printing Shop</h1>
     <dl>
         <div class="sec">
             <dt><a href="index.html" class="default" style="color: black; text-decoration: none;">Homepage</a></dt>
@@ -15,6 +16,7 @@ const menuHtml = `
         </div>
       <dd>•PUP Laboratory High School</dd>
       <dd>•Barangay Piti Piw Piw Wiw Wiw</dd>
+      <dd>•Barangay Kuri Kuri MatMat</dd>
       <dd>•Lambingan Bridge</dd>
       <dd>•Battle of Yultong Hill</dd>
       <br><br><br><br><br><br><br><br>
